@@ -481,7 +481,7 @@ impl VirtualDom {
 
                     let DiffState { mutations, .. } = diff_state;
 
-                    log::debug!("succesffuly resolved scopes {:?}", mutations.dirty_scopes);
+                    log::debug!("successfully resolved scopes {:?}", mutations.dirty_scopes);
                     for scope in &mutations.dirty_scopes {
                         self.dirty_scopes.remove(scope);
                     }
